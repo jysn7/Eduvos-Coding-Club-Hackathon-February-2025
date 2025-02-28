@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coding Club</title>
+    <link rel="stylesheet" href="styles/navigation-bar.css">
+    <link rel="stylesheet" href="styles/landing-page.css">
+    <link rel="stylesheet" href="styles/about-page.css">
+    <link rel="stylesheet" href="styles/dynamic&animations.css">
+    <link rel="stylesheet" href="styles/contact-us.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="styles/resource.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/project(resource).css">
+<!--FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Sidebar-->
+    <div class="banner-side">     
+        <div class="navigation-sidebar">
+            <ul onclick="hideSidebar()"><a><img class="close-pic" src="icons/close.svg"></a></ul>
+            <a href="#home-sect">Home</a>
+            <a href="#about-sect">About Us</a>
+            <a href="#events-sect">Events</a>
+            <a href="#contact-sect">Contact Us</a>
+            <a href="#resource-sect">Resources</a>
+            <button onclick="showPopup()" class="register-btn">Register</button>
+            
+        </div>
+      
+    </div>
+    <!--banner-->
+    <div class="banner">
+        <!--Left side-->
+        <div class="logo">
+            <img class="logo-pic" src="icons/logo2.png">
+        </div>
+        <!--middle-->
+        <div class="navigation-bar">
+            <a id="hideOnMobile" href="#home-sect">Home</a>
+            <a id="hideOnMobile" href="#about-sect">About Us</a>
+            <a id="hideOnMobile" href="#events-sect">Events</a>
+            <a id="hideOnMobile" href="#contact-sect">Contact Us</a>
+            <a id="hideOnMobile" href="#resource-sect">Resources</a>
+            
+        </div>
+        <!--right side-->
+        <div class="account">
+            <button id="hideOnMobile" onclick="showPopup()" class="register-btn">Register</button>      
+            <ul class="menu-btn" onclick="showSidebar()"><a><img class="hamb" src="icons/menu.svg"></a></ul>
+        </div>
+        
+    </div>
+    
+    <!--hero-->
+    <div id="home-sect" class="hero-home">
+        <div class="hero-main-text">
+            <h5>welcome to</h5>
+            <h1>The Coding Club</h1>
+            <p>Where great minds become incredible</p>
+        </div>
+    </div>
+    <!--POP UP REGISTER-->
+    <div class="popup">
+        <div class="close-btn-popup" onclick="hidePopup()">&times;</div>
+        <div class="popup-form">
+            <h2>Register</h2>
+            
+                <div class="form-element">
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name">
+                </div>
+                <div class="form-element">
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name">
+                </div>
+                <div class="form-element">
+                    <label for="popup-email">Email</label>
+                    <input type="text" id="popup-email" placeholder="Enter you school email">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="member">
+                    <label for="member">Recieve newsletters?</label>
+                </div>
+                <div class="form-element">
+                    <button type="submit" class="popup-reg-btn">Register</button>
+                </div>
+        </div>
+    </div>
+    <!--ABOUT-->
+    <div id="about-sect" class="hero-about">
+        <div class="hero-text">     
+            <h1>About Us</h1>
+            <p>Our mission is to empower students to enhance their coding skills, 
+                collaborate on projects, and build strong portfolios. 
+                We aim to cultivate a community of innovative and passionate coders.
+            </p>
+        </div>
+        <h1>Meet the Executive Team</h1>
+        <div class="hero-img">
+            <div>
+                <img src="images/Vusi Kunene Matlou - President.jpeg">
+                <h2>President</h2>
+                <p>Vusi Kenene Matlou</p>
+            </div>
+            <div>
+                <img src="images/Tanatswanashe Mthembu - Vice President.jpeg">
+                <h2>Vice President</h2>
+                <p>Tanatswanashe Mthembu</p>
+            </div>
+            <div>
+                <img src="images/Vuyisile Shokane - Events Planner.jpeg">
+                <h2>Events Planner</h2>
+                <p>Vuyisile Shokane</p>
+            </div>
+            <div>
+                <img src="images/Ayanda Dlamini - Secretary.jpeg">
+                <h2>Secretary</h2>
+                <p>Ayanda Dlamini</p>
+            </div>
+            <div>
+                <img src="images/Thoriso Dibatana - Treasurer.jpeg">
+                <h2>Treasurer</h2>
+                <p>Thoriso Dibatana</p>
+            </div>
+            <div>
+                <img src="images/Conquerant Lembindi - Student and Wellness.jpeg">
+                <h2>Student & Wellness</h2>
+                <p>Conquerant Lembindi</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--Contact Us-->
+    <div id="contact-sect" class="page">
+        <div class="wrapper">
+            <div class="wrapper-text">
+                <h1>Get in touch</h1>
+                <p>Have a question, an idea, or just want to talk code? 
+                    Whether you're looking to join our club, collaborate on a project, or need some coding advice, we’re here to help! Feel free to reach out, and we’ll get back to you as soon as we debug our inbox. 
+                    Let’s build something awesome together! 
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <label for="firstname-input">
+                        <img src="icons/person.svg">
+                    </label>
+                    <input type="text" name="firstname" id="firstname-input" placeholder="First Name">
+                </div>
+                <div>
+                    <label for="lastname-input">
+                        <img src="icons/person.svg">
+                    </label>
+                    <input type="text" name="lastname" id="lastname-input" placeholder="Last Name">
+                </div>
+                <div>
+                    <label for="email"><img src="icons/email.svg"></label>
+                    <input type="email" name="email" id="email-input" placeholder="Email">
+                </div>
+                <div class="query">   
+                    <input type="text" name="query" id="query-input" placeholder="Query">
+                </div>
+                <div>
+                    <button class="submit">Submit</button>
+                </div>
+            </div>   
+        </div>
+        <div class="icons">
+            <a href="https://www.instagram.com/codingclub404?igsh=MTB4amQzNWxnZDgzeg==" target="_blank"><img src="icons/instagram.svg"></a>
+            <a href=""><img src="icons/whatsapp.svg"></a>
+            <a href="https://www.tiktok.com/@codingclub404" target="_blank"><img src="icons/tiktok.svg"></a>
+            <a href="https://www.linkedin.com/in/coding-club-3841b1349" target="_blank"><img src="icons/linkedin.svg"></a>
+            <a href="https://github.com/CODINGCLUB404" target="_blank"><img src="icons/github.svg"></a>
+        </div>
+    </div>
+    <!--EVENTS-->
+    <div id="events-sect" class="event-page">
+        <div class="event-text">     
+            <h1>Events</h1>
+            <p>From hands-on coding sessions and project collabs to networking meetups and expert talks, there’s something for everyone. 
+                Whether you're here to learn, create, or connect, this is the place to level up your skills and have fun doing it. 
+                Don’t miss out—let’s build something amazing together!
+            </p>
+        </div>
+        <div class="event-img">
+            <div>        
+                <img class="image1" src="images/webinars.jpg">
+                <label for="image1"><p>02 April 2025</p></label>
+            </div>
+            <div>
+                <img class="image2" src="images/hackathon1.png">
+                <label for="image2"><p>24-28 Febuary 2025</p></label>
+            </div>
+            <div>
+                <img class="image3" src="images/workshops.jpg">
+                <label for="image3"><p>14 March 2025</p></label>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    
+    <!--Resources-->
+    <div id="resource-sect" class="resource-page">
+        <h1>What we offer</h1>
+        <div class="resource-grid-container">
+            <div class="resource-card">
+                <h2>HTML, CSS & JS</h2>
+                <p>Learn to build and style websites from scratch using HTML, CSS, and JavaScript. We’ll cover the fundamentals of web development, including structuring web pages with HTML, designing with CSS (layouts, animations, and responsiveness), and adding interactivity with JavaScript </p>
+            </div>
+            <div class="resource-card">
+                <h2>JAVA</h2>
+                <p>Learn the fundamentals of Java, from syntax and object-oriented programming to building real-world applications. We’ll cover variables, loops, methods, classes, and more, giving you the skills to write efficient, structured code. Perfect for beginners and those looking to level up!</p>
+            </div>
+            <div class="resource-card">
+                <h2>C#</h2>
+                <p>The Eduvos Coding Club is the place to dive into C# programming, whether you're just starting out or sharpening your skills. You'll learn core concepts like variables, loops, functions, and object-oriented programming, plus how to build real applications. Join us to code, create, and collaborate!</p>
+            </div>
+            <div class="resource-card">
+                <h2>Project Portfolio Building</h2>
+                <p>We are a hands-on club focused on creating real-world projects to showcase your skills. Whether you're into web development, or software engineering, you'll work on personalized projects, refine your coding abilities, and build a standout portfolio. Perfect for anyone looking to gain experience and impress future employers!</p>
+            </div>
+            <div class="resource-card">
+                <h2>Collaborative Projects</h2>
+                <p>We're centered around collaborative projects, where you’ll work with others to build real-world applications, websites, and software. Learn how to write clean code, use version control, and develop teamwork skills while creating something awesome together. 
+                    Perfect for those who love to code, collaborate, and innovate!</p>
+            </div>
+            <div class="resource-card">
+                <h2>Networking Events</h2>
+                <p>The Coding Club is a networking hub for developers to meet, collaborate, and grow. Join us for events where you can connect with industry professionals, share ideas, and gain insights into the tech world. Whether you're a beginner or experienced coder, it's the perfect place to expand your network and opportunities! </p>
+            </div>
+        </div>
+    </div>
+    <!--Project Page-->
+    <div class="project-page">
+        <h1>Resources</h1>
+        <div class="project-grid">
+            <div>
+                <div class="video-project">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gfkTfcpWqAY?si=GPqV65zbYa5cJUuH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="project-text">
+                    <p>C# Crash Course</p>
+                </div>
+            </div>
+            <div>
+                <div class="project-text">
+                    <p>Become more efficient with CSS</p>
+                </div>
+                <div class="video-project">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PL3Odw-k8W4?si=8brSh5AVaxPzHYAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div>
+                <div class="video-project">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pTB0EiLXUC8?si=2QDEt3yfz7FJb69M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="project-text">
+                    <p>Understanding OOP</p>
+                </div>
+            </div>
+            <div>
+                <div class="project-text">
+                    <p>What is a hackathon?</p>
+                </div>
+                <div class="video-project">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YyJRXPY0Vyg?si=XCXXM4BzGgxfOytF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div>
+                <div class="video-project">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5FySFg78cQI?si=xP2NntoDw05lPYYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="project-text">
+                    <p>Coding Tips</p>
+                </div>
+            </div>
+            <div>
+                <div class="project-text">
+                    <p>Tech Jobs</p>
+                </div>
+                <div class="video-project">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fZmQ_aPXJAM?si=pQUxygEb36GdpKk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="socials-footer">
+            <a href="#"><img src="icons/email.svg"></a>
+            <a href="#"><img src="icons/whatsapp.svg"></a>
+            <a href="#"><img src="icons/instagram.svg"></a>
+            <a href="#"><img src="icons/linkedin.svg"></a>
+            <a href="https://www.tiktok.com/@codingclub404 
+            " target="_blank"><img src="icons/tiktok.svg"></a>
+        </div>
+        <div class="links-footer">
+            <a href="#home-sect"><ul>Home</ul></a>
+            <a href="#about-sect"><ul>About Us</ul></a>
+            <a href="#events-sect"><ul>Events</ul></a>
+            <a href="#contact-sect"><ul>Contact Us</ul></a>
+            <a href="#resource-sect"><ul>Resources</ul></a>
+        </div>
+        <div class="by-footer">
+            <p>Created by Syntax Error</p>
+        </div>
+    </div>
+    
+<script src="script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,106 @@
+/*about page*/
+.event-page{
+    padding-left: min(12vmin, 20%);
+    padding-right: min(12vmin, 20%);
+    padding-bottom: 5vmin;
+    width: 100%;
+    height: auto;
+    background-color: rgb(15, 2, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.event-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.event-text h1{
+    color: white;
+    font-size: 6vmin;
+    font-weight: 900;
+    margin: 15px 0;
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+}
+.event-text h5{
+    color: white;
+    font-size: 4vmin;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.event-text p{
+    color: rgba(165, 165, 165, 0.671);
+    font-size: 2vmin;
+    max-width: 120vmin;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.event-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10vw;
+    padding-top: 10vmin;
+    width: 100%;
+}
+.event-img img{   
+    min-width: 8vmin;
+    min-height: 10vmin;
+    width: 100%;
+    height: auto;
+    border-radius: 2vmin;
+    cursor: pointer;
+}
+.event-img img:hover{
+    transform: scale(1.5);
+    transition-duration: 1.3s;
+}
+
+.event-img > .div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    color: white;
+}
+
+@media(max-width:800px){
+    .event-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8vmin;
+        padding-top: 2vmin;
+        width: 100vmin;
+    }
+    .event-img img{  
+        width: 50vmin; 
+        
+       
+    }
+    .event-page{
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 10vmin;
+        height: auto;
+        width: auto;
+        
+    }
+    .event-text p{
+        margin-bottom: 0px;
+    }
+    .event-text h1{
+        padding-top: 0;
+    }
+}

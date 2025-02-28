@@ -1,0 +1,66 @@
+.project-page{
+    height: auto;
+    width: 100%;
+    background-color: rgb(15, 2, 33);
+    padding: 10vmin 10vmin 10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.project-grid{
+    display: flex;
+    width: 100vmin;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vmin; 
+}
+.project-grid div{
+   
+    display: flex;
+    flex: 2;
+    justify-self: center;
+    width: 100%;
+    height: 30vmin;
+    gap: 4vmin;
+   
+}
+.project-page > h1{
+    padding-bottom: 10vmin;
+    color: rgb(244, 191, 238);
+}
+
+.video-project{
+    
+    box-shadow: 0 0 20px 6px rgba(255, 226, 231, 0.3);
+    
+    
+}
+.project-text{
+    background-color: transparent;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 5vmin;
+    border-width: 1px;
+    border-color: rgb(202, 154, 222);
+    box-shadow: 0 0 10px 1px rgba(197, 152, 252, 0.405);
+}
+@media(max-width: 900px){
+    .project-grid div{
+        height: auto;
+        width: 100%; 
+    }
+    .project-grid{
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+    }
+    .project-text{
+        font-size: 2rem;
+    }
+
+}

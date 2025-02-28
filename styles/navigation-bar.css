@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Montserrat,Poppins, Arial, Helvetica, sans-serif; 
+    font-weight: 500;
+}
+
+body{
+    box-sizing: border-box;
+   
+}
+/*navbar*/
+.banner{
+    position: fixed;
+    left: 1vmin;
+    top: 1vmin;
+    right: 1vmin;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(80, 80, 80, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 50;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+} 
+
+.banner >ul{
+    text-decoration: none;
+}
+.hamb{   
+    width: 3vmin;
+}
+.menu-btn{
+    display: none;
+}
+.logo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+    padding-right: 100px;
+}
+
+.logo-pic{
+    width: 8vmin;
+    height: 9vmin;
+    margin-left: 3vmin;
+}
+
+
+.navigation-bar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vmin;
+    
+    gap: 9vmin;
+    margin-right: 0;
+    flex: 5;
+    padding-right: 2vmin;
+    
+}
+.navigation-bar > a{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    vertical-align: middle;  
+}
+
+.navigation-bar > a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(229, 157, 255);
+    
+    border-radius: 2px;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;  
+    color: blueviolet; 
+}
+
+.navigation-bar > a:hover:after{
+    width: 100%;   
+    box-shadow: 0 0 10px 3px rgb(214, 159, 234);
+    
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4vmin;
+    flex: 2;
+  
+}
+.account > li{
+    vertical-align: text-top;
+    margin-top: -2vmin;
+}
+
+.register-btn{
+    height: 40px;
+    width: 80px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: linear-gradient(to right, rgb(104, 42, 127) , rgb(110, 5, 215));
+    box-shadow: 0 0 20px 0.5px rgb(124, 31, 147);
+    color: white;
+    background-color: rgba(89, 89, 89, 0.379);
+    cursor: pointer;
+    margin-left: 0;
+}
+.logo-img{
+    display: flex;
+    justify-content: center;
+    width: 20px; 
+}
+
+.register-btn:hover{
+    background-color: rgba(81, 81, 81, 0.478);
+    transform: translateY(-5px);
+    transition: 0.4s ;
+}
+
+
+.register-btn:active{
+    
+    background-color: rgba(255, 255, 255, 0.845);
+}
+.navigation-sidebar{
+    position: fixed;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10vmin;
+    flex-direction: column;
+    flex: 6;
+    background-color: rgba(34, 14, 37, 0.526);
+    backdrop-filter: blur(20px);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    width: min(45vmin);
+    padding-top:7vmin;
+    padding-bottom: 5vmin;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.664);
+}
+
+
+.navigation-sidebar > a{
+    
+    left: 50%;
+    top: 50%;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.navigation-sidebar > a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+   
+}
+
+.navigation-sidebar > label,
+.account > label{
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    width: 37px;
+    border-radius: 18.5px;
+    border: solid;
+    border-width: 2px; 
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.478);
+    
+}
+.navigation-sidebar > label{
+    margin-left: 0px;
+}
+
+/*POP-UP*/
+.popup{
+    opacity: 0;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+    z-index:1000;
+    width: 50vmin;
+    padding: 3vmin 3vmin;
+    background: #fff;
+    box-shadow: 2px 2px 10px 100vw rgba(0, 0, 0, 0.833);
+    backdrop-filter: blur(20px);
+    border-radius: 3vmin;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+/*.popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}*/
+.popup .close-btn-popup{
+    position: absolute;
+    top: 1vmin;
+    right: 1vmin;
+    width: 4vmin;
+    height: 4vmin;
+    background-color: #ef9af3;
+    color: #eee;
+    text-align: center;
+    line-height: 4vmin;
+    border-radius: 2vmin;
+    cursor: pointer;
+}
+
+.popup .popup-form h2{
+    text-align: center;
+    color: #222;
+    margin: 2vmin 0 4vmin;
+    font-size: 3vmin;
+}
+.popup .popup-form .form-element{
+    margin: 4vmin 0;
+}
+.popup .popup-form .form-element label{
+    font-size: 1.5vmin;
+    color: #222;
+}
+.popup .popup-form .form-element input[type="text"] {
+    margin-top: 1vmin;
+    display: block;
+    width: 100%;
+    padding: 2vmin;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 2vmin;
+}
+.popup .popup-form .form-element input[type="checkbox"] {
+    margin-right: 1vmin;
+}
+.popup .popup-form .form-element .popup-reg-btn{
+    width: 100%;
+    height: 5vmin;
+    border: none;
+    outline: none;
+    font-size: 2vmin;
+    background-color: #d16ccb;
+    color: #f5f5f5;
+    border-radius: 2vmin;
+    cursor: pointer;
+}
+.popup .popup-form .form-element .popup-reg-btn:hover{
+    background-color: #3d033c;
+    border: solid;
+    border-width: 1px;
+    border-color: #ef9af3;
+    box-shadow: 0 0 10px 10px #e9a4f6a0;
+}
