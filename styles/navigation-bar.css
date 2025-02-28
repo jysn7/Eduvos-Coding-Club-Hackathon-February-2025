@@ -255,6 +255,7 @@ body{
     margin-top: 1vmin;
     display: block;
     width: 100%;
+    font-size: 1.5vmin;
     padding: 2vmin;
     outline: none;
     border: 1px solid #aaa;
