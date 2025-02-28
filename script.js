@@ -12,12 +12,14 @@ function hideSidebar(){
 //popup
 function showPopup(){
     const popup = document.querySelector('.popup')
-    popup.style.opacity ='1'
+    popup.style.opacity ='1';
+    popup.style.top = '50%';
     
 }
 function hidePopup(){
     const popup = document.querySelector('.popup')
-    popup.style.opacity = '0'
+    popup.style.opacity = '0';
+    popup.style.top = '-150%';
 };
 //Get in touch button
 let btnClear = document.querySelector('.submit');
