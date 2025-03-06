@@ -42,6 +42,17 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10vmin;
     justify-content: center;
-    padding-left: 15vmin;
-    padding-right: 15vmin;
+    padding-left: 25vmin;
+    padding-right: 25vmin;
+}
+@media(max-width: 432px){
+    .resource-grid-container{
+        width: 100vw;
+    }
+}
+
+@media(max-width: 345px){
+    .resource-grid-container{
+        width: 80vw;
+    }
 }
