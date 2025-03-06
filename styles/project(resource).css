@@ -18,6 +18,12 @@
     align-items: center;
     gap: 3vmin; 
 }
+span {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4vmin;
+}
 .project-grid div{
    
     display: flex;
@@ -50,17 +56,58 @@
     border-color: rgb(202, 154, 222);
     box-shadow: 0 0 10px 1px rgba(197, 152, 252, 0.405);
 }
+
+.view-less-btn,
+.view-more-btn{
+    margin-top: 2vmin;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.256);
+    backdrop-filter: blur(10px);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 20px 4px rgba(224, 128, 230, 0.4);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 4vmin;
+    width: 12vmin;
+    border-radius: 2vmin;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.view-less-btn:hover,
+.view-more-btn:hover{
+    scale: 1.2;
+    padding: 1vmin;
+    width: 14vmin;
+    height: 6vmin;
+    box-shadow: 0 0 20px 4px rgba(243, 47, 158, 0.4);
+    background-color: rgba(247, 176, 229, 0.256);
+}
+
+.view-less-btn,
+.view-more-container{
+    display: none;
+}
+.view-more-container--show{
+    display: inline;
+}
 @media(max-width: 900px){
     .project-grid div{
         height: auto;
         width: 100%; 
     }
     .project-grid{
-        padding-left: 3vmin;
-        padding-right: 3vmin;
+        padding-left: 5vmin;
+        padding-right: 5vmin;
     }
     .project-text{
         font-size: 2rem;
+    }
+    .view-less-btn,
+    .view-more-btn{
+        font-size: 1.8vmin;
+        margin-top: 10vmin;
     }
 
 }
