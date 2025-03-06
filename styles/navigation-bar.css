@@ -39,15 +39,16 @@ body{
 }
 .logo{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
+    padding-top: 2vmin;
     flex: 1;
     padding-right: 100px;
 }
 
 .logo-pic{
-    width: 8vmin;
-    height: 9vmin;
+    width: 10vmin;
+    height: 11vmin;
     margin-left: 3vmin;
 }
 
