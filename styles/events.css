@@ -4,8 +4,8 @@
     padding-right: min(12vmin, 20%);
     padding-bottom: 5vmin;
     width: 100%;
-    height: auto;
-    background-color: rgb(15, 2, 33);
+    height: 100vh;
+    background: url(back1.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
